@@ -1,80 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Resume</title>
-  <style>
-    :root{--accent:#0b76ef;--text:#0b1b2b;--muted:#4a5568}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;color:var(--text);margin:0;background:#f7fafc}
-    .container{max-width:1000px;margin:28px auto;padding:24px;background:#fff;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,0.06)}
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .name{font-size:28px;font-weight:700}
-    .meta{color:var(--muted);font-size:14px}
-    .actions a{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
-    section{margin-top:18px}
-    h2{font-size:16px;margin:0 0 8px 0;color:var(--accent)}
-    .card{padding:12px;border-left:4px solid #eef6ff;background:#fbfdff;border-radius:6px;margin-bottom:12px}
-    .job-title{font-weight:700}
-    .small{color:var(--muted);font-size:13px}
-    .viewer{margin-top:18px;border:1px solid #e6eef9;border-radius:8px;overflow:hidden}
-    @media (max-width:760px){header{flex-direction:column;align-items:flex-start}.actions a{display:inline-block;width:100%;text-align:center}}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume</title>
+  <style>html,body{height:100%;margin:0}iframe{border:0;width:100%;height:100vh}</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div>
-        <div class="name">Your Name</div>
-        <div class="meta">Location • Email: you@example.com • <a href="https://github.com/pvadlakonda" target="_blank" rel="noopener">github.com/pvadlakonda</a></div>
-      </div>
-      <div class="actions">
-        <a href="resume.pdf" target="_blank" rel="noopener">Download PDF</a>
-      </div>
-    </header>
-
-    <section>
-      <h2>Summary</h2>
-      <div class="card small">
-        Short summary / professional headline. Replace this text with the extracted summary from your resume.
-      </div>
-    </section>
-
-    <section>
-      <h2>Experience</h2>
-      <div class="card">
-        <div class="job-title">Job Title — Company Name</div>
-        <div class="small">Location • Dates</div>
-        <ul>
-          <li>Bullet about responsibilities and achievements.</li>
-        </ul>
-      </div>
-      <!-- Duplicate the .card block for each role -->
-    </section>
-
-    <section>
-      <h2>Education</h2>
-      <div class="card">
-        <div class="job-title">Degree — Institution</div>
-        <div class="small">Dates • Additional info</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <div class="card small">List key skills: Languages, Frameworks, Tools, Cloud, etc.</div>
-    </section>
-
-    <section>
-      <h2>Resume Viewer</h2>
-      <div class="viewer">
-        <iframe src="resume.pdf" width="100%" height="700" style="border:0" title="Resume PDF"></iframe>
-      </div>
-    </section>
-
-    <footer style="margin-top:18px;color:var(--muted);font-size:13px">
-      Last updated: 2026-02-05
-    </footer>
-  </div>
+  <iframe src="resume.pdf" title="Resume PDF"></iframe>
 </body>
 </html>
